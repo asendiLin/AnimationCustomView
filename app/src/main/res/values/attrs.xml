@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--圆弧进度-->
+    <declare-styleable name="ProgressCircle">
+        <attr name="progress_border_width" format="dimension"/>
+        <attr name="progress_border_color" format="color"/>
+        <attr name="progress_shadow_color" format="color"/>
+        <attr name="progress_current" format="float"/>
+        <attr name="progress_total" format="float"/>
+        <attr name="text_size" format="float"/>
+    </declare-styleable>
+</resources>
