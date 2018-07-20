@@ -20,6 +20,8 @@
         </activity>
         <activity android:name=".point.ManyPointViewActivity">
         </activity>
+        <activity android:name=".button.RecordButtonActivity">
+        </activity>
     </application>
 
 </manifest>
