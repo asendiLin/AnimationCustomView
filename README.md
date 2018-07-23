@@ -10,4 +10,5 @@ animation and custom view.
 ![](https://github.com/asendiLin/AnimationCustomView/raw/master/app/src/main/image/point.gif "正弦轨迹圆点")
 
 * Record Button
+
 ![](https://github.com/asendiLin/AnimationCustomView/raw/master/app/src/main/image/recordButton.gif "录制按钮")
