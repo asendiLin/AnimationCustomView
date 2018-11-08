@@ -12,3 +12,11 @@ animation and custom view.
 * Record Button
 
 ![](https://github.com/asendiLin/AnimationCustomView/raw/master/app/src/main/image/recordButton.gif "录制按钮")
+
+* Divider
+
+![](https://github.com/asendiLin/AnimationCustomView/raw/master/app/src/main/image/divider.gif "分割线")
+
+* Drag
+
+![](https://github.com/asendiLin/AnimationCustomView/raw/master/app/src/main/image/drag.gif "拖拽")
