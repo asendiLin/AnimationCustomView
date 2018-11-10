@@ -20,3 +20,7 @@ animation and custom view.
 * Drag
 
 ![](https://github.com/asendiLin/AnimationCustomView/raw/master/app/src/main/image/drag.gif "拖拽")
+
+* itemView animator
+
+![](https://github.com/asendiLin/AnimationCustomView/raw/master/app/src/main/image/change.gif "change")    ![](https://github.com/asendiLin/AnimationCustomView/raw/master/app/src/main/image/insert.gif "拖拽")      ![](https://github.com/asendiLin/AnimationCustomView/raw/master/app/src/main/image/remove.gif "remove")
