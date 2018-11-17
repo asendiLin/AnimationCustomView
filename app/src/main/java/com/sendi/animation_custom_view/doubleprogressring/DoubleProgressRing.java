@@ -1,8 +1,10 @@
 package com.sendi.animation_custom_view.doubleprogressring;
 
+import android.animation.Animator;
 import android.animation.Keyframe;
 import android.animation.ObjectAnimator;
 import android.animation.PropertyValuesHolder;
+import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
@@ -40,6 +42,8 @@ public class DoubleProgressRing extends View {
     private final int mTotalProgressAngle = 360;     //一整个的圆弧的完整角度
     private float mCurrentProgressAngle = 0f; //记录当前进度的角度
 
+    private RectF mBigOval;
+
     public DoubleProgressRing(Context context) {
         this(context, null);
     }
@@ -64,6 +68,12 @@ public class DoubleProgressRing extends View {
         typeArray.recycle();
 
         initPaint();
+
+        initRect();
+    }
+
+    private void initRect() {
+        mBigOval=new RectF();
     }
 
 
@@ -78,7 +88,7 @@ public class DoubleProgressRing extends View {
         postInvalidate();//刷新
     }
 
-    private ObjectAnimator animator;
+    private ObjectAnimator mAnimator;
 
     public void startAni() {
         mProgressCurrent = getProgressCurrent();
@@ -91,13 +101,16 @@ public class DoubleProgressRing extends View {
         PropertyValuesHolder holder = PropertyValuesHolder.
                 ofKeyframe("progress", kStart, kCenter, kEnd);
 
-        animator = ObjectAnimator.ofPropertyValuesHolder(this, holder);
-        animator.setDuration(ANIMATION_DURACTION).start();
+        mAnimator = ObjectAnimator.ofPropertyValuesHolder(this, holder);
+
+        mAnimator.setDuration(ANIMATION_DURACTION).start();
 
     }
 
     private void stopAnimation() {
-        animator.cancel();
+        if (mAnimator != null) {
+            mAnimator.cancel();
+        }
         this.clearAnimation();
     }
 
@@ -177,10 +190,11 @@ public class DoubleProgressRing extends View {
         setMeasuredDimension(sideLength, sideLength);
     }
 
+
     @Override
     protected void onDraw(Canvas canvas) {
 
-        RectF mBigOval = new RectF(mProgressBorderWidth / 2
+        mBigOval.set(mProgressBorderWidth / 2
                 , mProgressBorderWidth / 2
                 , getWidth() - (mProgressBorderWidth - 1) / 2
                 , getHeight() - (mProgressBorderWidth - 1) / 2);
