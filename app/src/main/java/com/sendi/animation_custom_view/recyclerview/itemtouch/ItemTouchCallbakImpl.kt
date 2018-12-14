@@ -11,7 +11,7 @@ import android.support.v7.widget.helper.ItemTouchHelper
  * data: 2018/11/7.
  * description:拖动排序和拖拽
  */
-class ItemTouchCallbakImpl<VH : RecyclerView.ViewHolder>
+class  ItemTouchCallbakImpl<VH : RecyclerView.ViewHolder>
 constructor(private val mAdapter: ItemTouchAdapter<VH>) : ItemTouchHelper.Callback() {
 
     override fun getMovementFlags(recyclerView: RecyclerView?, viewHolder: RecyclerView.ViewHolder?): Int {

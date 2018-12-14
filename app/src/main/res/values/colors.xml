@@ -7,4 +7,8 @@
 
     <color name="color_rb_out_white">#FFFFFF</color>
     <color name="color_rb_inner_red">#f90911</color>
+
+    <color name="colorLine"></color>
+    <color name="colorProgress"></color>
+    <color name="colorProgressText"></color>
 </resources>
