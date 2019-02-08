@@ -24,3 +24,7 @@ animation and custom view.
 * itemView animator
 
 ![](https://github.com/asendiLin/AnimationCustomView/raw/master/app/src/main/image/change.gif "change")    ![](https://github.com/asendiLin/AnimationCustomView/raw/master/app/src/main/image/insert.gif "insert")      ![](https://github.com/asendiLin/AnimationCustomView/raw/master/app/src/main/image/remove.gif "remove")
+
+* progress Line
+
+![](https://github.com/asendiLin/AnimationCustomView/raw/master/app/src/main/image/progress_line.gif "progress_line")
