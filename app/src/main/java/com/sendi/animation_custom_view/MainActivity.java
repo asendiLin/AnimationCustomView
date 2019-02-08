@@ -8,6 +8,7 @@ import android.view.View;
 import com.sendi.animation_custom_view.button.RecordButtonActivity;
 import com.sendi.animation_custom_view.doubleprogressring.DoubleProgressRingActivity;
 import com.sendi.animation_custom_view.point.ManyPointViewActivity;
+import com.sendi.animation_custom_view.progress_line.ProgressLineActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,5 +29,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void toRecordButton(View view) {
         startActivity(new Intent(this, RecordButtonActivity.class));
+    }
+
+    public void toProgressLine(View view) {
+        startActivity(new Intent(this, ProgressLineActivity.class));
     }
 }

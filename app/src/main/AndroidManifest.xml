@@ -28,6 +28,9 @@
             android:enabled="true"
             android:exported="true">
         </service>
+
+        <activity android:name=".progress_line.ProgressLineActivity">
+        </activity>
     </application>
 
 </manifest>
