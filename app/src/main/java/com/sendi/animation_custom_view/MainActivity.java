@@ -9,6 +9,7 @@ import com.sendi.animation_custom_view.button.RecordButtonActivity;
 import com.sendi.animation_custom_view.doubleprogressring.DoubleProgressRingActivity;
 import com.sendi.animation_custom_view.point.ManyPointViewActivity;
 import com.sendi.animation_custom_view.progress_line.ProgressLineActivity;
+import com.sendi.animation_custom_view.text.ScrollTextViewActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,5 +34,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void toProgressLine(View view) {
         startActivity(new Intent(this, ProgressLineActivity.class));
+    }
+
+    public void toScrollTextView(View view) {
+        startActivity(new Intent(this, ScrollTextViewActivity.class));
     }
 }

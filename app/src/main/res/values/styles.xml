@@ -16,4 +16,9 @@
         <attr name="pl_progress_color" format="color" />
         <attr name="pl_text_size" format="dimension" />
     </declare-styleable>
+    <declare-styleable name="ScrollTextView">
+        <attr name="android:textColor" format="color"/>
+        <attr name="android:textSize" format="dimension"/>
+        <attr name="android:textStyle" format="integer"/>
+    </declare-styleable>
 </resources>
