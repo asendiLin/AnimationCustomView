@@ -28,3 +28,7 @@ animation and custom view.
 * progress Line
 
 ![](https://github.com/asendiLin/AnimationCustomView/raw/master/app/src/main/image/progress_line.gif "progress_line")
+
+* ScrollTextView
+
+![](https://github.com/asendiLin/AnimationCustomView/raw/master/app/src/main/image/scroll_text_view.gif "scroll_text_view")
